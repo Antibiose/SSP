@@ -3,7 +3,7 @@ import time
 picks = ["Stein", "Schere","Papier"]
 
 def computer_pick_print(computer_picks):
-    time.sleep(0.5)
+    
     print("Der Computer wählt "+ (computer_picks))
 
 def player_loses():
@@ -36,7 +36,7 @@ computer_picks = random.choice(picks)
 
 # computer/player draw
 if player_picks == computer_picks:
-    computer_pick_print(computer_picks)
+    computer_pick_print(computer_picks); time.sleep(0.5)
     print("Unentschieden!")
 
 # computer chooses rock
