@@ -1,18 +1,20 @@
 import random
 
-print("Willkommmen zu Schrere, Stein, Papier - muhahaha")
-spieler1 = input("Schere, Stein oder Papier?")
+picks = ["Stein", "Schrere", "Papier"]
 
-computer = ("Schere", "Stein", "Papier")
 
-if spieler1 == random.choice(computer):
-    print("Unentschieden!!")
+    
+
+print("Schere, Stein, Papier Action - whoop!")
+player_picks = input("Schere, Stein oder Papier? - Bitte großschreiben")
+computer_picks =  random.choice(picks)
+print(computer_picks)
+
+if player_picks == computer_picks:
+    print(computer_picks)
+    print("Du hast " + player_picks + " gewählt und der Computer " + computer_picks)
+    print("Unentschieden!")
 else:
-    print("Test")
-
-
-def ComputerSSP(computer):
-    computer_pick = random.choice(computer)
-    print(computer_pick)
-
-ComputerSSP(computer)
+    print(computer_picks)
+    print("Testende")
+ 
