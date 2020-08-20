@@ -12,7 +12,8 @@ def player_wins():
     
 
 print("Schere, Stein, Papier Action - whoop!")
-player_picks = input("Schere, Stein oder Papier? - Bitte großschreiben")
+player_picks = input("Schere, Stein oder Papier? - Bitte großschreiben: ")
+print("Du hast " + player_picks + " gewählt.")
 computer_picks = random.choice(picks)
 
 
