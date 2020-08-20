@@ -59,6 +59,7 @@ elif computer_picks == "Schere":
 #computer chooses Paper
 else:
     if player_picks == "Stein" or player_picks == "stein":
+        computer_pick_print(computer_picks)    
         player_loses()
     else:
         player_wins()                                            
