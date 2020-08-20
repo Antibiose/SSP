@@ -3,12 +3,15 @@ import time
 picks = ["Stein", "Schere","Papier"]
 
 def computer_pick_print(computer_picks):
+    time.sleep(0.5)
     print("Der Computer wählt "+ (computer_picks))
 
 def player_loses():
+    time.sleep(0.5)
     print("Du verlierst! :(")
 
 def player_wins():
+    time.sleep(0.5)
     print("Du gewinst! :)")
 
 #just for drama purposes - actual ppl do say that when playing
@@ -24,11 +27,11 @@ player_picks = ""
 while player_picks not in picks:
     player_picks = input("Schere, Stein oder Papier? - Bitte großschreiben: ") 
 
-
 game_drama()
 
+
 print("Du hast " + player_picks + " gewählt.") 
-computer_picks = random.choice(picks); time.sleep(0.5)
+computer_picks = random.choice(picks)
 
 
 # computer/player draw
