@@ -13,7 +13,7 @@ def player_loses():
 
 def player_wins():
     time.sleep(0.5)
-    print("Du gewinst! :)")
+    print("Du gewinnst! :)")
 
 #just for drama purposes - actual ppl do say that when playing
 def game_drama():
