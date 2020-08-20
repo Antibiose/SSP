@@ -1,9 +1,10 @@
 import random
 import time
 picks = ["Stein", "Schere","Papier"]
+player_entry = ["Stein", "Schere","Papier", "stein", "papier", "schere"]
+
 
 def computer_pick_print(computer_picks):
-    
     print("Der Computer wählt "+ (computer_picks))
 
 def player_loses():
@@ -18,13 +19,13 @@ def player_wins():
 def game_drama():
     print("SCHERE!"); time.sleep(0.5)
     print("STEIN!"); time.sleep(0.5)
-    print("PAPIER!"); time.sleep(1)
+    print("PAPIER!"); time.sleep(0.1)
 
     
 
 print("Schere, Stein, Papier Action - whoop!"); time.sleep(1)
 player_picks = ""
-while player_picks not in picks:
+while player_picks not in player_entry:
     player_picks = input("Schere, Stein oder Papier? - Bitte großschreiben: ") 
 
 game_drama()
@@ -42,7 +43,7 @@ if player_picks == computer_picks:
 # computer chooses rock
 elif computer_picks == "Stein":
     computer_pick_print(computer_picks)                                                    
-    if player_picks == "Schere":
+    if player_picks == "Schere" or player_picks == "schere":
         player_loses()
     else:
         player_wins()
@@ -50,14 +51,14 @@ elif computer_picks == "Stein":
 #computer chooses scissors
 elif computer_picks == "Schere":   
     computer_pick_print(computer_picks)                                                 
-    if player_picks == "Papier":
+    if player_picks == "Papier" or player_picks == "papier":
         player_loses()
     else:
         player_wins()
 
 #computer chooses Paper
 else:
-    if player_picks == "Stein":
+    if player_picks == "Stein" or player_picks == "stein":
         player_loses()
     else:
         player_wins()                                            
