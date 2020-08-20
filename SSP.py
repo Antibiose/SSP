@@ -15,7 +15,6 @@ print("Schere, Stein, Papier Action - whoop!")
 player_picks = input("Schere, Stein oder Papier? - Bitte großschreiben")
 computer_picks = random.choice(picks)
 
-print(computer_picks)
 
 # computer/player draw
 if player_picks == computer_picks:
