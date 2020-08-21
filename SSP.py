@@ -1,11 +1,13 @@
 import random
 import time
+
+
 picks = ["Stein", "Schere","Papier"]
-player_entry = ["Stein", "Schere","Papier", "stein", "papier", "schere"]
+player_entry = ["Stein", "Schere","Papier"]
 
 
 def computer_pick_print(computer_picks):
-    print("Der Computer wählt "+ (computer_picks))
+    print("Der Computer wählt "+ (computer_picks)); time.sleep(0.5)
 
 def player_loses():
     time.sleep(0.5)
@@ -63,4 +65,3 @@ else:
         player_loses()
     else:
         player_wins()                                            
-    
