@@ -7,7 +7,7 @@ picks = ["Stein", "Schere","Papier"]
 player_entry = ["Stein", "Schere","Papier"]
 
 
-def :
+def computer_pick_print(computer_picks):
     print("Der Computer wählt "+ (computer_picks)); time.sleep(0.5)
 
 def player_loses():
@@ -51,10 +51,10 @@ elif computer_picks == "Stein":
         player_loses()
     else:
         player_wins()
-jkgsdhk
+
 #computer chooses scissors
-elif computer_picks == "Schere":   
-                                                     
+elif computer_picks == "Schere":  
+                                                        
     if player_picks == "Papier" or player_picks == "papier":
         player_loses()
     else:
