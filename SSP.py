@@ -51,7 +51,7 @@ elif computer_picks == "Stein":
         player_loses()
     else:
         player_wins()
-
+jkgsdhk
 #computer chooses scissors
 elif computer_picks == "Schere":   
                                                      
