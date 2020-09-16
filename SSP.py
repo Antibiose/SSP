@@ -11,11 +11,11 @@ def computer_pick_print(computer_picks):
     print("Der Computer wählt "+ (computer_picks)); time.sleep(0.5)
 
 def player_loses():
-    time.sleep(0.5)
+    time.sleep(0.2)
     print("Du verlierst! :(")
 
 def player_wins():
-    time.sleep(0.5)
+    time.sleep(0.2)
     print("Du gewinnst! :)")
 
 #just for drama purposes - actual ppl do say that when playing. This is not important and can be removed
