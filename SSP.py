@@ -18,7 +18,7 @@ def player_wins():
     time.sleep(0.5)
     print("Du gewinnst! :)")
 
-#just for drama purposes - actual ppl do say that when playing
+#just for drama purposes - actual ppl do say that when playing. This is not important and can be removed
 def game_drama():
     print("SCHERE!"); time.sleep(0.5)
     print("STEIN!"); time.sleep(0.5)
