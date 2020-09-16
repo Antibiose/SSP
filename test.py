@@ -1,21 +1,25 @@
 import tkinter as tk
-from time import sleep as sleep
+import time
+import SSP
 
 window = tk.Tk()
 
-welcome_message = tk.Label(text = "SCHERE - STEIN - PAPIER")
-sleep = 0.5
-second_message = tk.Label(text = "Hype.")
+picks = ["Stein", "Schere","Papier"]
+
+welcome = tk.Message(window,
+                  #  width = 500,
+                    text = "Schere, Stein, Papier Action - whoop!")
+welcome.grid(row=0, column = 1)
 
 
 schere = tk.Button(text = "Schere")
-schere.grid(row = 0, column = 0)
+schere.grid(row = 1, column = 0)
 
 stein = tk.Button(text = "Stein")
-stein.grid(row = 0, column = 1)
+stein.grid(row = 1, column = 1)
 
 papier = tk.Button(text = "Papier")
-papier.grid(row = 0, column = 2)
+papier.grid(row = 1, column = 2)
 
 
 
