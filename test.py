@@ -2,7 +2,6 @@ import tkinter as tk
 
 window = tk.Tk()
 
-test = tk.Label(text = "Hallo wundervolle GUI Welt!")
-test.pack()
+label = tk.Label(text = "DAS IST EIN TEST")
 
-window.mainloop()
+label.pack
